@@ -23,6 +23,7 @@
             </tr>
         <?php }?>
     </table>
+<hr>
         <div class="form-group">
             <label for="exampleInput">Pages:</label>
             <select name="forma" onchange="location = this.value;">
