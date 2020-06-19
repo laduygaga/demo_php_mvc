@@ -23,23 +23,19 @@
             </tr>
         <?php }?>
     </table>
-<ul class="pagination">Pages: 
-  <li><a href="index.php?controller=posts&action=page&offset=0">1</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=5">2</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=10">3</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=15">4</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=20">5</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=25">6</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=30">7</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=35">8</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=40">9</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=45">10</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=50">11</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=55">12</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=60">13</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=65">14</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=70">15</a></li>
-</ul>
-
+        <div class="form-group">
+            <label for="exampleInput">Pages:</label>
+            <select name="forma" onchange="location = this.value;">
+             <option value="index.php?controller=posts&action=page&offset=0">1</option>
+             <option value="index.php?controller=posts&action=page&offset=5">2</option>
+             <option value="index.php?controller=posts&action=page&offset=10">3</option>
+             <option value="index.php?controller=posts&action=page&offset=15">4</option>
+             <option value="index.php?controller=posts&action=page&offset=20">5</option>
+             <option value="index.php?controller=posts&action=page&offset=25">6</option>
+             <option value="index.php?controller=posts&action=page&offset=30">7</option>
+             <option value="index.php?controller=posts&action=page&offset=35">8</option>
+             <option value="index.php?controller=posts&action=page&offset=40">9</option>
+            </select>
+        </div>
 </div>
 <hr>

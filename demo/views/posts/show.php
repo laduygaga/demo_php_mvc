@@ -1,3 +1,6 @@
+<div class="topnav">
+  <a class="active" href="index.php?controller=posts&action=index">Back to allposts</a>
+</div>
 <div class="container">
 
     <div class="row">

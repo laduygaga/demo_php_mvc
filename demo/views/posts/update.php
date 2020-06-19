@@ -1,3 +1,7 @@
+<div class="topnav">
+  <a class="active" href="index.php?controller=posts&action=index">Back to allposts</a>
+</div>
+
 <div class="container">
     <h1>Edit Post <?php echo $post->id; ?></h1>
     <form action="<?php echo constant('URL'); ?>index.php?controller=posts&action=edit" method="POST" enctype="multipart/form-data" id="updateForm">
