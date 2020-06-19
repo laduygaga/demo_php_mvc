@@ -27,6 +27,7 @@
             <label for="exampleInput">Pages:</label>
             <select name="forma" onchange="location = this.value;">
              <option value="index.php?controller=posts&action=page&offset=0">1</option>
+             <option value="index.php?controller=posts&action=page&offset=0">1</option>
              <option value="index.php?controller=posts&action=page&offset=5">2</option>
              <option value="index.php?controller=posts&action=page&offset=10">3</option>
              <option value="index.php?controller=posts&action=page&offset=15">4</option>
