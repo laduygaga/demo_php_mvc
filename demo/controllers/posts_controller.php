@@ -37,7 +37,7 @@ class PostsController extends BaseController
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $title = $_POST["title"];
             $description = $_POST["description"];
-            $status = $_POST["status"];
+            $status = intval($_POST["status"]);
             $image=!empty($_FILES["image"]["name"])
                 ? sha1_file($_FILES['image']['tmp_name']) . "-" . basename($_FILES["image"]["name"]) : "";
             $create_at = date('Y-m-d H:i:s');

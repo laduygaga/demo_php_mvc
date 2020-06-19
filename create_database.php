@@ -34,7 +34,7 @@ $table = " CREATE TABLE posts (
     title varchar(255),
     description text,
     image varchar(255),
-    status varchar(30),
+    status int(6),
     create_at datetime,
     update_at datetime
 )";

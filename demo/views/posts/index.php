@@ -12,7 +12,7 @@
         <?php foreach ($posts as $post) {?>
             <tr>
                 <td><?php echo $post->id; ?></td>
-<td> <img style="max-height:50px; max-width:50px" class="img-fluid rounded maxHeight" src="<?php echo constant('URL')."uploads/".$post->image; ?>"> </td>
+                <td> <img style="max-height:100px; max-width:100px" class="img-fluid rounded maxHeight" src="<?php echo constant('URL')."uploads/".$post->image; ?>"> </td>
                 <td><?php echo $post->title; ?></td>
                 <td><?php echo $post->status; ?></td>
                 <td>
@@ -23,24 +23,5 @@
             </tr>
         <?php }?>
     </table>
-<ul class="pagination">Pages: 
-  <li><a href="index.php?controller=posts&action=page&offset=0">1</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=5">2</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=10">3</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=15">4</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=20">5</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=25">6</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=30">7</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=35">8</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=40">9</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=45">10</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=50">11</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=55">12</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=60">13</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=65">14</a>_</li>
-  <li><a href="index.php?controller=posts&action=page&offset=70">15</a></li>
-</ul>
-</div>
-
 </div>
 <hr>

@@ -1,7 +1,3 @@
-<div class="topnav">
-  <a href="http://localhost:8000/index.php?controller=posts&action=index">BACK TO POSTS MANAGER</a>
-</div>
-
 <div class="container">
     <h1>New Post</h1>
     <form action="<?php echo constant('URL'); ?>index.php?controller=posts&action=add" method="POST" enctype="multipart/form-data" id="insertForm">
@@ -11,10 +7,11 @@
             <input type="text" class="form-control" name="title" placeholder="Enter title">
         </div>
 
-        <div class="form-group">
-            <label for="exampleInput">Status:</label>
-            <input type="text" class="form-control" name="status" placeholder="Enter status">
-        </div>
+        <label for="status">Status:</label>
+        <select  class="form-control" name="status">
+          <option value="1">Enabled</option>
+          <option value="0">Disabled</option>
+        </select>
 
         <div class="form-group">
             <label for="exampleInput">Description:</label>

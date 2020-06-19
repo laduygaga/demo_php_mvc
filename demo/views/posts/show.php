@@ -1,7 +1,3 @@
-<div class="topnav">
-  <a href="http://localhost:8000/index.php?controller=posts&action=index">BACK TO POSTS MANAGER</a>
-</div>
-
 <div class="container">
 
     <div class="row">
@@ -17,7 +13,7 @@
             <hr>
 
             <!-- Preview Image -->
-            <img style="max-height:300px; max-width:300px" class="img-fluid rounded maxHeight" src="<?php echo constant('URL')."uploads/".$post->image; ?>">
+            <img style="max-height:100px; max-width:100px" class="img-fluid rounded maxHeight" src="<?php echo constant('URL')."uploads/".$post->image; ?>">
 
 
             <hr>

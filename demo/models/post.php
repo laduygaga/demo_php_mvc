@@ -85,7 +85,7 @@ class Post
     }
     static function edit($id, $title, $status, $description, $update_at) {
         $db = DB::getInstance();
-        $sql = "UPDATE posts SET title= '$title', status='$status', description= '$description', update_at= '$update_at' WHERE id=$id";
+        $sql = "UPDATE posts SET title= '$title', status=$status, description= '$description', update_at= '$update_at' WHERE id=$id";
         $db->exec($sql);
     }
 
