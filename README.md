@@ -1,1 +1,1 @@
-Firstly, Create Database: sudo php create_data.php.
+Firstly, Create Database: sudo php create_database.php.
