@@ -1,5 +1,5 @@
 <?php
-define('URL', 'http://localhost:8000/');
+define('URL', 'http://localhost/demo/');
 
 require_once('connection.php');
 
