@@ -16,7 +16,7 @@
             <hr>
 
             <!-- Preview Image -->
-            <img style="max-height:100px; max-width:100px" class="img-fluid rounded maxHeight" src="<?php echo constant('URL')."uploads/".$post->image; ?>">
+            <img style="max-height:100%; max-width:100%" class="img-fluid rounded maxHeight" src="<?php echo constant('URL')."uploads/".$post->image; ?>">
 
 
             <hr>

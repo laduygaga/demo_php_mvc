@@ -38,8 +38,9 @@ class PostsController extends BaseController
             $title = $_POST["title"];
             $description = $_POST["description"];
             $status = intval($_POST["status"]);
-            $image=!empty($_FILES["image"]["name"])
-                ? sha1_file($_FILES['image']['tmp_name']) . "-" . basename($_FILES["image"]["name"]) : "";
+            // $image=!empty($_FILES["image"]["name"])
+            //     ? sha1_file($_FILES['image']['tmp_name']) . "-" . basename($_FILES["image"]["name"]) : "";
+            $image=!empty($_FILES["image"]["name"]) ? basename($_FILES["image"]["name"]) : "";
             $create_at = date('Y-m-d H:i:s');
             Post::insert($title, $description, $status, $image, $create_at);
             header('Location: '.constant('URL').'index.php?controller=posts');

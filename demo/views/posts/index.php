@@ -12,7 +12,7 @@
         <?php foreach ($posts as $post) {?>
             <tr>
                 <td><?php echo $post->id; ?></td>
-                <td> <img style="max-height:100px; max-width:100px" class="img-fluid rounded maxHeight" src="<?php echo constant('URL')."uploads/".$post->image; ?>"> </td>
+                <td> <img style="max-height:200px; max-width:200px" class="img-fluid rounded maxHeight" src="<?php echo constant('URL')."uploads/".$post->image; ?>"> </td>
                 <td><?php echo $post->title; ?></td>
                 <td><?php echo $post->status; ?></td>
                 <td>
